@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài về nhà</title>
+</head>
+<body>
+<!--bai 1-->
+<!--<script>-->
+<!--    let e = 0;-->
+<!--    let d = 1;-->
+<!--    let c = 1;-->
+<!--    let a = prompt("nhập a");-->
+<!--    let b = prompt("nhập b");-->
+<!--    for (let i = a; i <= b; i++) {-->
+<!--        if (i % 3 === 0 & i % 5 === 0) {-->
+<!--            document.write("fizzbuzz");-->
+
+<!--        } else if (i % 3 === 0) {-->
+<!--            document.write("fizz");-->
+<!--        } else if (i % 5 === 0) {-->
+<!--            document.write("buzz")-->
+<!--        }-->
+<!--        if (i % 7 === 0) {-->
+<!--            e++;-->
+<!--        }-->
+<!--        if (i % 5 === 0) {-->
+<!--            d *= i;-->
+
+<!--        }-->
+<!--        if (i % 2 !== 0) {-->
+<!--            document.write("số lẻ " + i + "<h2>");-->
+<!--        } else {-->
+<!--            document.write("số chẵn " + i + "<h1>")-->
+<!--        }-->
+<!--        c *= i;-->
+
+<!--    }-->
+<!--    document.write("tích các số từ a đến b là " + c + "<br>");-->
+
+<!--    document.write("tích các số chia hết cho 5 từ a đến b là " + d + "<br>");-->
+<!--    document.write("số chia hết cho 7 có " + e + "<br>");-->
+<!--</script>-->
+<h1>BÀI 2</h1>
+<!--tính chu vi và diện tích hình vuông-->
+<!--<h6 id="cv"></h6>-->
+<!--<h6 id="dt"></h6>-->
+<!--<script>-->
+<!-- let a=prompt("nhập a");-->
+<!-- let c= a*4;-->
+<!-- document.getElementById("cv").innerHTML="chu vi là "+c;-->
+<!-- let b= a*a;-->
+<!--  document.getElementById("dt").innerHTML="diện tích là" +b;-->
+<!--</script>-->
+
+<!--<script>-->
+
+<!--    let a=+prompt("nhập a");-->
+<!--    let b=+prompt("nhập b");-->
+<!--    let c=Math.pow(a,2);-->
+<!--    document.write("tích của a^2 là "+c+"<br>");-->
+<!--    let d=Math.pow(a,b);-->
+<!--    document.write("tích của a^b là "+d+"<br>");-->
+<!--    let e=0;-->
+<!--    for (i=a;i<=b;i++){-->
+<!--       e += i;-->
+<!--    }document.write("tổng các số từ a đến b là "+e+"<br>");-->
+
+<!--</script>-->
+<!--nhập năm in ra thế kỉ-->
+<!--<script>-->
+<!--    let a=+prompt("nhập năm");-->
+<!--    let b=a/100;-->
+<!--    if (b===0){-->
+<!--        alert("thế kỉ "+b.toFixed());-->
+<!--    }else {-->
+<!--         d=b+1;-->
+<!--          d=Math.floor(d)-->
+<!--        alert("thuộc thế kỉ "+d)-->
+<!--    }-->
+<!--</script>-->
+<script>
+    let a = +prompt("nhập a");
+    let b = +prompt("nhập b");
+    let c = +prompt("nhập c");
+    if (a > 0 , b > 0 , c > 0) {
+        if (a + b > c) {
+            if (b + c > a) {
+                if (c + a > b) {
+                    document.write("đây là tam giác");
+                    if (a == b || b == c || c == a) {
+                        document.write(" cân");
+                    }
+                }
+                if (a === b && b === c && c === a) {
+                    document.write(" đều");
+                }
+
+                if (Math.pow(a,2) + Math.pow(b,2) === Math.pow(c,2) || Math.pow(a,2) + Math.pow(c,2) === Math.pow(b,2) || Math.pow(b,2) + Math.pow(c,2) === Math.pow(a,2)) {
+
+                    {document.write("tam giác vuông");}
+
+                }
+
+            }
+
+        }else {
+            alert("không phải tam giác")}
+    }
+</script>
+</body>
+</html>
